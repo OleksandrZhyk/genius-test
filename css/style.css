@@ -1,3 +1,53 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/poppins-v24-latin-300.eot');
+    src: url('../fonts/poppins-v24-latin-300.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/poppins-v24-latin-300.woff2') format('woff2'),
+        url('../fonts/poppins-v24-latin-300.woff') format('woff'),
+        url('../fonts/poppins-v24-latin-300.ttf') format('truetype'),
+        url('../fonts/poppins-v24-latin-300.svg#Poppins') format('svg');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v24-latin-regular.eot');
+    src: url('../fonts/poppins-v24-latin-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/poppins-v24-latin-regular.woff2') format('woff2'),
+        url('../fonts/poppins-v24-latin-regular.woff') format('woff'),
+        url('../fonts/poppins-v24-latin-regular.ttf') format('truetype'),
+        url('../fonts/poppins-v24-latin-regular.svg#Poppins') format('svg');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v24-latin-600.eot');
+    src: url('../fonts/poppins-v24-latin-600.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/poppins-v24-latin-600.woff2') format('woff2'),
+        url('../fonts/poppins-v24-latin-600.woff') format('woff'),
+        url('../fonts/poppins-v24-latin-600.ttf') format('truetype'),   
+        url('../fonts/poppins-v24-latin-600.svg#Poppins') format('svg');
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/poppins-v24-latin-900.eot');
+    src: url('../fonts/poppins-v24-latin-900.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/poppins-v24-latin-900.woff2') format('woff2'),
+        url('../fonts/poppins-v24-latin-900.woff') format('woff'),
+        url('../fonts/poppins-v24-latin-900.ttf') format('truetype'),
+        url('../fonts/poppins-v24-latin-900.svg#Poppins') format('svg');
+}
+
+
 :root {
     --color-brand-green: #819B57;
     --color-brand-brown: #31261A;
@@ -5,21 +55,29 @@
     
     --color-brand-secondary-green: #465929; 
     --color-brand-secondary-brown: #A18268;
-    --color-brand-secondary-light: #CFCFBC;
-    
+    --color-brand-secondary-light: #CFCFBC; 
 }
-
-
 
 /* base */
+
 body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-brand-brown);
+    line-height: 150%;
    
-   color: var(--color-brand-brown);
 }
+address {
+    font-style: normal;
+   
+}   
 ul {
     list-style: none;
 }
+
 /* button  */
+
 .button {
     color: var(--color-brand-light) ;
     border: 2px solid var(--color-brand-green);
@@ -29,7 +87,6 @@ ul {
     background-color: var(--color-brand-green);
     font-size: 18px;
     font-weight: 600;
-    line-height: 100%;
     cursor: pointer;
     border-radius: 8px;
 }
@@ -40,19 +97,23 @@ ul {
     cursor: pointer;
 }
 /* link */
+
 .link {
     color: var(--color-brand-light);
-    height: 27px;
-    width: 106px;
+    text-decoration: none;
 }
 .link:hover {
     color: var(--color-brand-green);
-    height: 27px;
-    width: 133px;
+    font-weight: 600;
 }
 /* hero section */
+
 .hero-title {
     color: var(--color-brand-light);
+   text-align: center;
+   font-size: 128px;
+   font-weight: 900;
+  
 }
 
 
@@ -60,16 +121,99 @@ ul {
     color: var(--color-brand-green);
 }
 /* advantages section */
+
 .advantages-list  {
    color: var(--color-brand-light);
    background-color: var(--color-brand-green);
    size: 20px;
    font-weight: 300;
 }
-.section-title .accent {
+.advantages-item {
+    font-size: 20px;
+    font-weight: 300;
+
+  
+}
+
+/* tradition section */
+
+.traditions-text {
+    color: var(--color-brand-green);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.traditions-text-two {
+    color: var(--color-brand-green);
+    font-weight: 600;
+}
+.section-title-tradition {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.3;
+}
+  
+
+/* chefs section    */
+
+.section-title-chefs .accent {
     color: var(--color-brand-secondary-green);
 }
-.section-title {
+
+.section-title-chefs  {
     color: var(--color-brand-brown);
     font-weight: 900;
+    font-size: 64px;
+    line-height: 1.3;
+}
+.chefs-name {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 1;
+}
+
+/* formats section */
+
+.formats-title {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.3;
+}
+
+.formats-item {
+    font-size: 24px;
+    font-weight: 600;
+}
+.formats-text {
+    font-size: 14px;
+        font-weight: 300;
+        line-height: 1.5;
+}
+
+/* contacts section */
+
+.contacts-title {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.3;
+}
+
+/* footer section */
+
+.address-link {
+    font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5;
+        color: var(--color-brand-light);
+        text-decoration: none;
+       
+
+}
+.address-link:hover {
+    color: var(--color-brand-green) ;
+}
+.address-copyright {
+    font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: var(--color-brand-secondary-brown)
 }
