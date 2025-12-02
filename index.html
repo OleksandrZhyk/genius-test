@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="header">
@@ -145,37 +145,63 @@
             <ul class="formats-list">
               <li class="format-item">
                 <article class="format-card walrus">
+                  <img
+                    class="format-image"
+                    src="./images/walrus.jpg"
+                    alt="walrus-image"
+                  />
+                  <div class="overlay-gradient"></div>
                   <h3 class="format-title" lang="en">Walrus</h3>
                   <div class="formats-text">
-                    <p>Площа: до 120 м2</p>
-                    <p>Меню: розширене меню</p>
-                    <p>
+                    <p class="formats-text-item">Площа: до 120 м2</p>
+                    <p class="formats-text-item">Меню: розширене меню</p>
+                    <p class="formats-text-item">
                       Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
                       офіціанти-різнороби
                     </p>
-                    <p>Посадкові місця: є</p>
+                    <p class="formats-text-item">Посадкові місця: є</p>
                   </div>
                 </article>
               </li>
               <li class="format-item">
                 <article class="format-card horseshoe">
+                  <img
+                    class="format-image"
+                    src="./images/horseshoe.jpg"
+                    alt="horseshoe-image"
+                  />
+                  <div class="overlay-gradient"></div>
                   <h3 class="format-title" lang="en">Horseshoe</h3>
                   <div class="formats-text">
-                    <p>Площа: до 25 м2</p>
-                    <p>Меню: найпопулярніші позиції меню</p>
-                    <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
-                    <p>Посадкові місця: відсутні</p>
+                    <p class="formats-text-item">Площа: до 25 м2</p>
+                    <p class="formats-text-item">
+                      Меню: найпопулярніші позиції меню
+                    </p>
+                    <p class="formats-text-item">
+                      Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря
+                    </p>
+                    <p class="formats-text-item">Посадкові місця: відсутні</p>
                   </div>
                 </article>
               </li>
               <li class="format-item">
                 <article class="format-card handlebar">
+                  <img
+                    class="format-image"
+                    src="./images/handlebar.jpg"
+                    alt="handlebar-image"
+                  />
+                  <div class="overlay-gradient"></div>
                   <h3 class="format-title" lang="en">Handlebar</h3>
                   <div class="formats-text">
-                    <p>Площа: до 15 м2</p>
-                    <p>Меню: найпопулярніші позиції меню</p>
-                    <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
-                    <p>Посадкові місця: відсутні</p>
+                    <p class="formats-text-item">Площа: до 15 м2</p>
+                    <p class="formats-text-item">
+                      Меню: найпопулярніші позиції меню
+                    </p>
+                    <p class="formats-text-item">
+                      Штат: 1 продавець, 1 пекар, 1 помічник пекаря
+                    </p>
+                    <p class="formats-text-item">Посадкові місця: відсутні</p>
                   </div>
                 </article>
               </li>
@@ -334,7 +360,7 @@
           Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
         </p>
 
-        <form name="modal-order-form" autocomplete="off" novalidate>
+        <form name="modal-order-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name"
               >Ім'я</label
@@ -345,6 +371,7 @@
               id="user-name"
               name="user-name"
               placeholder="Ім'я"
+              required
             />
           </div>
 
@@ -358,6 +385,8 @@
               id="user-tel"
               name="user-tel"
               placeholder="Телефон"
+              required
+              pattern="\+[0-9]{12}"
             />
           </div>
 
@@ -371,6 +400,7 @@
               id="user-email"
               name="user-email"
               placeholder="Електрона пошта"
+              required
             />
           </div>
 
